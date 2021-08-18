@@ -48,7 +48,7 @@ def user(userId):
                 badgeDict[key] = badgeDict.get(key, 0) + 1
             badgeTop = sorted(badgeDict.items(),key=(lambda x:x[1]), reverse=True)
     else:
-        return '404'
+        return render_template('user.html')
 
     return render_template('user.html',
         userName = userName,
