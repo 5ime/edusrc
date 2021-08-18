@@ -152,15 +152,13 @@ var myChart = new Chart(ctx, {
   data: {
       labels: [{% for i in range(badgeTop | length) %}"{{badgeTop[i][0]}}",{% endfor %}],
       datasets: [{
-          label: '# of Votes',
+          label: '漏洞等级',
           data: [{% for i in range(badgeTop | length) %}"{{badgeTop[i][1]}}",{% endfor %}],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
           'rgba(54, 162, 235, 0.2)',
           'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)'
+          'rgba(75, 192, 192, 0.2)'
       ],
       }]
   },
@@ -171,7 +169,7 @@ var myDoughnutChart = new Chart(ctx, {
   data: {
           labels: [{% for i in range(vulTop | length) %}"{{vulTop[i][0]}}",{% endfor %}],
           datasets: [{
-              label: '# of Votes',
+              label: '漏洞类型',
               data: [{% for i in range(vulTop | length) %}"{{vulTop[i][1]}}",{% endfor %}],
           backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
@@ -179,7 +177,14 @@ var myDoughnutChart = new Chart(ctx, {
             'rgba(255, 206, 86, 0.2)',
             'rgba(75, 192, 192, 0.2)',
             'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)'
+            'rgba(255, 159, 64, 0.2)',
+            'rgba(153, 50, 204, 0.2)',
+            'rgba(240, 128, 128, 0.2)',
+            'rgba(255, 215, 0, 0.2)',
+            'rgba(127, 255, 170, 0.2)',
+            'rgba(175, 238, 238, 0.2)',
+            'rgba(70, 130, 180, 0.2)',
+            'rgba(148, 0,211 , 0.2)'
         ],
         }]
     },
