@@ -9,14 +9,3 @@ function  setValue(){
         })
     }
 }
-function share() {
-    var myText = document.createElement("textarea")
-    var userName = "{{ userName }}";
-    myText.value = userName+"的edusrc详情统计："+window.location.href;
-    console.log(myText.value);
-    document.body.appendChild(myText)
-    myText.select();
-    document.execCommand('copy');
-    document.body.removeChild(myText);
-    mdui.snackbar("当前链接已复制");
-}

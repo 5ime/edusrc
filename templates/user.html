@@ -12,7 +12,6 @@
 <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.js"></script>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
-<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </head>
 <body>
 <style>
@@ -145,6 +144,19 @@
       </div>
   </div>
 </div>
+<script>
+function share() {
+    var myText = document.createElement("textarea")
+    var userName = "{{ userName }}";
+    myText.value = userName+"的edusrc详情统计："+window.location.href;
+    console.log(myText.value);
+    document.body.appendChild(myText)
+    myText.select();
+    document.execCommand('copy');
+    document.body.removeChild(myText);
+    mdui.snackbar("当前链接已复制");
+}
+</script>
 <script>
 var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
