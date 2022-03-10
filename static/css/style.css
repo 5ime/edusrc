@@ -1,101 +1,100 @@
 ::selection {
-  background: rgba(0,149,255,.1);
+    background: rgba(0, 149, 255, .1);
 }
 
 ::-webkit-scrollbar {
-  width:8px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius:10px;
-  background:rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
 }
 
-body:before{
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: .3;
-  z-index: -1;
-  content: "";
-  position: fixed;
-  background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+body:before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .3;
+    z-index: -1;
+    content: "";
+    position: fixed;
+    background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
 }
 
-.mdui-textfield-input{
-  float: left;
-  width: 75%;
-  text-transform: none;
+.mdui-textfield-input {
+    float: left;
+    width: 75%;
+    text-transform: none;
 }
 
-.mdui-btn{
-  width: 25%;
+.mdui-btn {
+    width: 25%;
 }
 
 .mdui-container {
-  max-width: 800px;
-  margin-top: 15em;
-  color: #545454;
+    max-width: 800px;
+    margin-top: 15em;
+    color: #545454;
 }
 
-.mdui-card{
-  opacity: .8;
-  padding: 2em;;
-  border-radius: 6px;
+.mdui-card {
+    opacity: .8;
+    padding: 2em;
+    border-radius: 6px;
 }
 
-p{
-  opacity: .8;
+p {
+    opacity: .8;
 }
 
-.mdui-card-content{
-  padding: 16px 0 0 0;
+.mdui-card-content {
+    padding: 16px 0 0 0;
 }
 
 .mdui-col-xs-12 {
-margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .mdui-table-fluid {
-max-height: calc(100vh - 419px);
-overflow-y: scroll;
+    max-height: 303px;
+    overflow-y: scroll;
 }
 
 .tags {
-margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .share {
-  position: absolute;
-  right:0;
-  top:0;
-  padding: 1em;
-  opacity: .8;
-  cursor: pointer;
-  color: #00000073;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1em;
+    opacity: .8;
+    cursor: pointer;
+    color: #00000073;
 }
 
 .home {
-  position: absolute;
-  left:0;
-  top:0;
-  padding: 1em;
-  opacity: .8;
-  cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1em;
+    opacity: .8;
+    cursor: pointer;
 }
-
 
 a {
-  text-decoration: none!important;
-  color: #00000073;
+    text-decoration: none!important;
+    color: #00000073;
 }
 
-.footer p{
-  position: fixed;
-  bottom: 1em;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 18px;
+.footer p {
+    position: fixed;
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 18px;
 }
