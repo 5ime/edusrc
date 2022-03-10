@@ -160,7 +160,7 @@ function share() {
 <script>
 var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
-  type: 'radar',
+  type: 'polarArea',
   data: {
       labels: [{% for i in range(badgeTop | length) %}"{{badgeTop[i][0]}}",{% endfor %}],
       datasets: [{
